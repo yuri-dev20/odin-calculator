@@ -12,7 +12,9 @@ numbers.forEach(number => {
 
 operands.forEach(operand => {
     operand.addEventListener("click", () => {
-        display.value += operand.textContent;
+        if (operand.textContent !== "=") {
+            display.value += operand.textContent;
+        }
     });
 })
 
