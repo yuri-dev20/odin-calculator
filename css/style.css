@@ -9,6 +9,8 @@ body {
 .container {
     height: 100vh;
     display: flex;
+    flex-direction: column;
+    gap: 15px;
     align-items: center;
     justify-content: center;
 }
@@ -94,4 +96,10 @@ body {
 
 .numbers .operand:hover {
     background-color: rgb(247, 177, 39);
+}
+
+.error {
+    color: rgb(225, 57, 57);
+    font-size: 20px;
+    font-weight: bold;
 }
